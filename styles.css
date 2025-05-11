@@ -1,0 +1,256 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px 100px 100px 100px;
+    background-color: #000;
+    color: #fff;
+}
+
+header .logo {
+    width: 200px; /* Logo menor */
+    height: auto;
+}
+
+nav a {
+    color: #00d9ff; /* Azul claro */
+    margin: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.caixa-conteudo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.caixa-texto {
+    width: 600px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+span {
+    color: #00d9ff; /* Azul claro */
+    font-weight: 900;
+    font-size: 70px;
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    background-color: #4B0082; /* Roxo escuro */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #3a0066; /* Roxo ainda mais escuro */
+}
+
+.caixa-imagem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.imagem-item {
+    text-align: center;
+    width: 20%; /* Faz com que cada imagem ocupe 30% da largura */
+}
+
+.imagem-item img {
+    width: 100%; /* Imagens ocupam 100% do seu container */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.imagem-item p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Layout do portfólio */
+#portfolio .caixa-imagem {
+    display: flex;
+    justify-content: center; /* Deixa as imagens mais juntas */
+    gap: 10px; /* Espaçamento entre os blocos */
+    flex-wrap: wrap; /* Garante que elas não saiam da tela */
+}
+
+/* Primeiras 2 imagens (lado a lado) */
+#portfolio .caixa-imagem > .imagem-item {
+    width: 20%;
+}
+
+/* Bloco que vai conter as 3 imagens empilhadas */
+#portfolio .caixa-imagem .coluna-imagens {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 19%;
+}
+
+#portfolio .caixa-imagem .coluna-imagens .imagem-item {
+    width: 100%;
+}
+
+#servicos .caixa-imagem img {
+    width: 400px;  /* tamanho ajustado */
+    height: auto;
+    margin: 0;
+    display: block;
+    float: left;
+    margin-left: -10px;  /* ajuste de 20px à esquerda se necessário */
+    border-radius: 15px;  /* Arredondando as bordas */
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.icon {
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Efeito de aumento no hover */
+}
+
+/* Tamanhos separados para os ícones */
+.instagram-icon-img {
+    width: 40px; /* Tamanho específico do Instagram */
+    height: 40px;
+}
+
+.whatsapp-icon-img {
+    width: 60px; /* Tamanho específico do WhatsApp */
+    height: 50px;
+}
+
+header {
+    padding: 15px 20px;
+}
+
+/* Responsividade para dispositivos móveis e tablets */
+
+/* Para telas maiores que 1024px */
+@media (max-width: 1024px) {
+    body {
+        padding: 20px 50px 100px 50px;
+    }
+
+    .caixa-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .caixa-texto {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    span {
+        font-size: 50px;
+    }
+
+    .caixa-imagem {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .imagem-item {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .social-icon {
+        margin-right: 10px;
+    }
+
+    .whatsapp-icon-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .instagram-icon-img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 20px 50px 20px;
+    }
+
+    .caixa-conteudo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .caixa-texto {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    span {
+        font-size: 45px;
+    }
+
+    .caixa-imagem {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .imagem-item {
+        width: 80%; /* Ajusta as imagens para ocupar mais espaço */
+    }
+
+    .social-icon {
+        margin-right: 5px;
+    }
+
+    .whatsapp-icon-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .instagram-icon-img {
+        width: 35px;
+        height: 35px;
+    }
+}

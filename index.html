@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <img src="imagens/Vision Studio logo.png" alt="Logo Vision Studio" class="logo">
+  </div>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section class="caixa-conteudo" id="sobre">
+  <div class="caixa-texto">
+    <h2>Sobre a <span>Vision Studio</span></h2>
+    <p>A Vision Studio foi fundada por Gabriel Castro, Pedro Henrique e Pedro Santana, três visionários apaixonados pela arte da imagem e pela inovação digital. Com o objetivo de transformar momentos especiais em experiências inesquecíveis, a Vision Studio começou sua jornada com foco em capturar imagens de alta qualidade e evoluiu para atender a um mercado mais amplo de soluções digitais.
+
+    Além dos serviços de filmagem, edição profissional e imagens aéreas com drone, a Vision Studio expandiu sua expertise para marketing digital, tráfego pago, gestão de redes sociais e criação de sites. Estamos prontos para ajudar nossos clientes a fortalecerem sua presença online, aumentar sua visibilidade e alcançar resultados extraordinários.
+
+    Com uma equipe dedicada e apaixonada pelo que faz, a Vision Studio se destaca por sua abordagem criativa e estratégica, entregando soluções completas e personalizadas para cada necessidade. Acreditamos no poder da criatividade para contar histórias e construir marcas de sucesso no mundo digital.</p>
+  </div>
+  <div class="caixa-imagem">
+    <div class="imagem-item">
+      <img src="imagens/WhatsApp Image 2025-05-10 at 22.03.34_b3bb9efa.jpg" alt="Sobre a Vision Studio">
+      <p>GABRIEL CASTRO</p>
+    </div>
+    
+    <div class="imagem-item">
+      <img src="imagens/IMG_0254.jpg" alt="Sobre a Vision Studio">
+      <p>PEDRO HENRIQUE</p>
+    </div>
+    
+    <div class="imagem-item">
+      <img src="imagens/IMG_0412.jpg" alt="Sobre a Vision Studio">
+      <p>PEDRO SANTANA</p>
+    </div>
+  </div>
+</section>
+
+<section class="caixa-conteudo" id="portfolio">
+  <div class="caixa-texto">
+    <h2>Nosso <span>Portfólio</span></h2>
+  </div>
+
+  <div class="caixa-imagem">
+    <div class="imagem-item">
+      <img src="imagens/IMG_8453.jpg" alt="">
+    </div>
+
+    <div class="imagem-item">
+      <img src="imagens/IMG_7938.jpg" alt="">
+    </div>
+
+    <div class="coluna-imagens">
+      <div class="imagem-item">
+        <img src="imagens/Verde.jpg" alt="">
+      </div>
+      <div class="imagem-item">
+        <img src="imagens/rosa.jpg" alt="">
+      </div>
+      <div class="imagem-item">
+        <img src="imagens/rosinha.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="caixa-conteudo" id="servicos">
+  <div class="caixa-texto">
+    <h2>Nossos <span>Serviços</span></h2>
+    <ul>
+      <li>📷 Filmagem de eventos e casamentos</li>
+      <li>🎥 Vídeos institucionais e promocionais</li>
+      <li>🚁 Imagens aéreas com drone</li>
+      <li>✂️ Edição profissional de vídeos</li>
+    </ul>
+  </div>
+  <div class="caixa-imagem">
+    <img src="imagens/23d98e67-63cd-4f71-9300-43ad437bf755.png" alt="Serviços Vision Studio">
+  </div>
+</section>
+
+<section class="caixa-conteudo" id="contato">
+  <div class="caixa-imagem">
+  </div>
+  <div class="caixa-texto">
+    <h2><span>Fale</span> Conosco</h2>
+    <p>Quer agendar uma reunião ou sessão? Fale com a gente agora mesmo!</p>
+    <a href="https://wa.me/5575999104719" target="_blank">
+      <button>Agendar no WhatsApp</button>
+    </a><br><br>
+    
+    <!-- Ícones de redes sociais -->
+    <a href="https://www.instagram.com/vision.studio_art/" target="_blank" class="social-icon instagram-icon">
+      <img src="imagens/Instagram.png" alt="Instagram" class="icon instagram-icon-img">
+    </a>
+    <a href="https://wa.me/5575999104719" target="_blank" class="social-icon whatsapp-icon">
+      <img src="imagens/whatsapp-icon.png" alt="WhatsApp" class="icon whatsapp-icon-img">
+    </a>
+  </div>
+</section>
+
+
+<footer>
+  &copy; 2025 Vision Studio | Todos os direitos reservados.
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
+
+<!-- Adicionando os scripts em 'scripts.js' -->
+<script>
+let numero = 345345;
+let texto = "Já clicou no SININHO";
+
+function abacate() {
+    console.log(numero);
+    console.log(texto);
+}
+
+abacate(); // Chame a função aqui
+
+let circulo = document.querySelector(".circulo");
+let imagem = document.querySelector(".copo");
+
+function trocarCor(cor) {
+    circulo.style.backgroundColor = cor;
+}
+
+function trocaImagem(nomeImagem) {
+    imagem.src = nomeImagem; // Agora sim: troca pela imagem que foi passada
+}
+</script>
